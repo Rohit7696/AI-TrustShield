@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg">
+    <div class="card">
+
+        <h2>{{ dtype|capitalize }} Result</h2>
+
+        <div class="result {{ result }}">
+            {{ result }}
+        </div>
+
+        <p class="reason">{{ reason }}</p>
+
+        <a href="/detect/{{ dtype }}" class="btn">Try Another</a>
+        <a href="/" class="back">← Home</a>
+    </div>
+</body>
+</html>
